@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-size: 16;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.header{
+    border-bottom: 1px solid white;
+}
+
+.header, .home{
+    background-color: crimson;
+}
+
+.home{
+    padding: 250px  0 200px;
+}
+
+.home-content h1{
+    font-size: 55px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
+}
+.home-content p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+
+.mybtn1{
+    background-color: #fff;
+    color: crimson;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 36px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-image img{
+    position: absolute;
+    animation: productani01 3s linear infinite ;
+}
+
+@keyframes productani01{
+    0%,100%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(.15px);
+    }
+}
+
+.home .bg-shape div{
+    opacity: 0.5;
+    position: absolute;
+}
+.home .bg-shape div:nth-child(1){
+    height:100px ;
+    width: 100px;
+    top: 20%;
+    left:20% ;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: shapeani01 5s linear infinite;
+}
+
+@keyframes shapeani01{
+    0%,100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+}
+
+.home .bg-shape div:nth-child(2){
+    height:80px ;
+    width: 80px;
+    top: 80%;
+    left:60% ;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-bottom: 5px solid transparent; 
+    animation: shapeani02 7s linear infinite;
+}
+
+@keyframes shapeani02{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.home .bg-shape div:nth-child(3){
+    height:80px ;
+    width: 80px;
+    top: 5%;
+    left:80% ;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-bottom: 5px solid transparent; 
+    animation: shapeani03 7s linear infinite;
+}
+
+@keyframes shapeani03{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.home .bg-shape div:nth-child(4){
+    height:100px ;
+    width: 100px;
+    top: 50%;
+    left:-2% ;
+    background-color: transparent;
+    border: 5px solid #fff;
+    animation: shapeani04 5s linear infinite;
+}
+
+@keyframes shapeani04{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
